@@ -3,7 +3,7 @@ section#nav {
     flex-direction: column;
 }
 
-nav#nav-bar{
+nav#nav-bar-img{
     display: flex;
     padding: 0.5rem 1rem 1rem 1rem;
 

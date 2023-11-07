@@ -1,0 +1,20 @@
+section#nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav#nav-bar{
+    display: flex;
+    padding: 0.5rem 1rem 1rem 1rem;
+
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+}
+
+ul#nav-list{
+    display: flex;
+
+    gap: 1rem;
+    list-style: none;
+}

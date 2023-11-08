@@ -14,7 +14,153 @@ nav#nav-bar-img{
 
 ul#nav-list{
     display: flex;
-
     gap: 1rem;
     list-style: none;
+}
+
+
+/*
+Section Pontos fortes
+*/
+
+#pontos-fortes{
+    display: flex;
+    flex-direction: row;
+    background-image: url("./img/background-nuvens.avif");
+    background-color: green;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#imagem-nuvem{
+    width: 44rem;
+    height: 35rem;
+}
+#container-texto-imagem-nuvem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+}
+#texto-imagem-nuvem{
+    height:10rem;
+    width: 30rem;
+}
+
+/*
+Pitch
+*/
+
+#pitch{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+#footer{
+    background-color: black;
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+Desenvolvedores
+*/
+
+#desenvolvedores{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    background-color: lightgray;
+}
+#desenvolvedores-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+.info-desenvolvedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.img-desenvolvedor{
+    background-color: blueviolet;
+    border-radius: 100rem;
+    width: 10rem;
+    height: 10rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#caio-freitas{
+
+}
+#mateus-tibao{
+
+}
+#lana-andrade{
+    /*
+    background-image: url("./img/img-lana-andrade.jpeg");
+    */
+}
+#lucas-garcia{
+
+}
+
+/*
+Footer
+*/
+
+#footer{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#footer-info-contato{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: space-between;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 1rem;
+}
+
+#direita{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+#verificar-email{
+    display: flex;
+    flex-direction: row;
+}
+
+#linha{
+    border:solid;
+    border-color: white;
+    width: 80rem;
+    align-self: center;
+    border-radius: 15rem;
+    border-width: 0.01rem;
 }

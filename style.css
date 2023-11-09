@@ -1,3 +1,6 @@
+*{
+    margin: 0 auto;
+}
 section#nav {
     display: flex;
     flex-direction: column;
@@ -10,6 +13,7 @@ nav#nav-bar-img{
     justify-content: space-between;
     align-items: center;
     background-color: gray;
+    width: 100%;
 }
 
 ul#nav-list{
@@ -27,11 +31,11 @@ Section Pontos fortes
     display: flex;
     flex-direction: row;
     background-image: url("./img/background-nuvens.avif");
-    background-color: green;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+    align-items: center;
 }
 
 #imagem-nuvem{
@@ -42,8 +46,8 @@ Section Pontos fortes
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     justify-content: center;
 }
 #texto-imagem-nuvem{
@@ -132,23 +136,24 @@ Footer
     color: white;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    justify-content: space-around;
 }
 
 #footer-info-contato{
     display: flex;
     flex-direction: row;
-    gap: 3rem;
     justify-content: space-between;
-    padding-left: 4rem;
-    padding-right: 4rem;
     padding-top: 1rem;
+    width: 100%;
+}
+
+#contato-link-info-desenvolvedores{
 }
 
 #direita{
     display: flex;
     flex-direction: row;
-    gap: 4rem;
+    gap: 6rem;
 }
 
 #verificar-email{
@@ -156,11 +161,39 @@ Footer
     flex-direction: row;
 }
 
+#contato-grande, #contato-mini, #link-info-desenvolvedores{
+    color: white;
+    text-decoration: none;
+}
+
 #linha{
     border:solid;
     border-color: white;
     width: 80rem;
     align-self: center;
+    border-radius: 15rem;
+    border-width: 0.01rem;
+}
+
+#receber-info-projeto{
+}
+
+#p-info-projeto{
+}
+
+#redes-sociais-container{
+    height: 5rem;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-rede-social-box{
+    border:solid;
+    border-color: white;
+    width: 4rem;
+    height: 4rem;
+    justify-content: center;
     border-radius: 15rem;
     border-width: 0.01rem;
 }

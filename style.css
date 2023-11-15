@@ -1,6 +1,11 @@
 *{
     margin: 0 auto;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+  
 section#nav {
     display: flex;
     flex-direction: column;
@@ -61,7 +66,7 @@ Pitch
 
 #pitch{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,7 +76,7 @@ Pitch
 #footer{
     background-color: black;
     height: 50vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -82,7 +87,7 @@ Desenvolvedores
 
 #desenvolvedores{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,6 +142,7 @@ Footer
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    position: relative;
 }
 
 #footer-info-contato{
@@ -164,8 +170,19 @@ Footer
 #contato-grande, #contato-mini, #link-info-desenvolvedores{
     color: white;
     text-decoration: none;
+    text-align: left;
 }
 
+#btn-contato-devs{
+    padding: 1rem;
+    border: none;
+    background: none;
+    border-radius: 0.5rem;
+}
+
+#btn-contato-devs:hover{
+    cursor:pointer;
+}
 #linha{
     border:solid;
     border-color: white;
@@ -196,4 +213,48 @@ Footer
     justify-content: center;
     border-radius: 15rem;
     border-width: 0.01rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.fonte-branca{
+    color: white;
+}
+
+#contato-devs-absolute{
+    background-color: black;
+    width: 55rem;
+    height: 18rem;
+    top: 126rem;
+    position: absolute;
+    right: 0rem;
+    border-left: 1px solid white;
+    border-width: 0.01rem;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+.imagem-desenvolvedor{
+    background-color: blueviolet;
+    border-radius: 100rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.contato-desenvolvedor-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+#contato-desenvolvedor-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-left: 2rem;
 }

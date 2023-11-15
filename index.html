@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -13,13 +18,13 @@
                     <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
                 </svg>
                 <ul id="nav-list">
-                    <li>Problema</li>
-                    <li>Projeto</li>
-                    <li>Público Alvo</li>
-                    <li>Pontos Fortes</li>
-                    <li>Pitch</li>
-                    <li>Desenvolvedores</li>
-                    <li>Contato</li>
+                    <li><button onclick="location.href='#problema'">Problema</button></li>
+                    <li><button onclick="location.href='#problema'">Projeto</button></li>
+                    <li><button onclick="location.href='#problema'">Público Alvo</button></li>
+                    <li><button onclick="location.href='#pontos-fortes'">Pontos fortes</button></li>
+                    <li><button onclick="location.href='#pitch'">Pitch</button></li>
+                    <li><button onclick="location.href='#desenvolvedores'">Desenvolvedores</button></li>
+                    <li><button onclick="location.href='#footer'">Contato</button></li>
                 </ul>
             </nav>
 
@@ -102,11 +107,10 @@
     <footer id="footer">
         <div id="footer-info-contato">
             <div id="contato-link-info-desenvolvedores">
-                <a id="link-info-desenvolvedores" 
-                href="PleaseEnableJavascript.html" onclick="MyFunction();return false;">
-                <h2 id="contato-grande">Contato</h2>
-                <p id="contato-mini">dos desenvolvedores</p>
-                </a>
+                <button id="btn-contato-devs" onclick="toggleContatoDevs()">
+                    <h3 id="contato-grande">Contato</h3>
+                    <p id="contato-mini">dos desenvolvedores</p>
+                </button>
             </div>
 
             <div id="direita">
@@ -129,11 +133,68 @@
         </div>
         <div id="linha"></div>
         <div id="redes-sociais-container">
-            <div class="logo-rede-social-box"></div>
-            <div class="logo-rede-social-box"></div>
-            <div class="logo-rede-social-box"></div>
+            <div class="logo-rede-social-box">
+                <a href="" class="fonte-branca">
+                    <i class="bi bi-twitter"></i>
+                </a>
+            </div>
+            <div class="logo-rede-social-box" >
+                <a href="" class="fonte-branca">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </div>
+            <div class="logo-rede-social-box">
+                <a href="" class="fonte-branca">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div>
+            <div class="logo-rede-social-box">
+                <a href="" class="fonte-branca">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
         </div>
     </footer>
+    <div id="contato-devs-absolute">
+        <div id="contato-desenvolvedor-container">
+            <div class="contato-desenvolvedor-box">
+                <div class="imagem-desenvolvedor"></div>
+                <p class="fonte-branca">Caio Freitas</p>
+                <p class="fonte-branca">caiofreitas@gmail.com</p>
+                <p class="fonte-branca">1140028922</p>
+                <a href=""><i class="bi bi-linkedin fonte-branca"></i></a>
+            </div>
+            <div class="contato-desenvolvedor-box">
+                <div class="imagem-desenvolvedor"></div>
+                <p class="fonte-branca">Caio Freitas</p>
+                <p class="fonte-branca">caiofreitas@gmail.com</p>
+                <p class="fonte-branca">1140028922</p>
+                <a href=""><i class="bi bi-linkedin fonte-branca"></i></a>
+            </div>
+            <div class="contato-desenvolvedor-box">
+                <div class="imagem-desenvolvedor"></div>
+                <p class="fonte-branca">Caio Freitas</p>
+                <p class="fonte-branca">caiofreitas@gmail.com</p>
+                <p class="fonte-branca">1140028922</p>
+                <a href=""><i class="bi bi-linkedin fonte-branca"></i></a>
+            </div>
+            <div class="contato-desenvolvedor-box">
+                <div class="imagem-desenvolvedor"></div>
+                <p class="fonte-branca">Caio Freitas</p>
+                <p class="fonte-branca">caiofreitas@gmail.com</p>
+                <p class="fonte-branca">1140028922</p>
+                <a href=""><i class="bi bi-linkedin fonte-branca"></i></a>
+            </div>
+        </div>
+
+        <!--
+        <div id="fiap-hc-box">
+            <img id="fiap-logo">
+            <p>em parceria com</p>
+            <h
+        </div>
+        -->
+    </div>
 
 </body>
 </html>

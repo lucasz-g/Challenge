@@ -9,17 +9,16 @@
     />
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <title>Document</title>
+    <title>Hospital dos Quadrinhos</title>
 </head>
 <body>
     <section id="nav">
-            <nav id="nav-bar-img">
-                <!-- <img id="logo-img" src="img/Logo.png" alt="Logo"> -->
+            <nav id="nav-bar">
                 <ul id="nav-list">
-                    <li><button class="nav-button" onclick="location.href='#problema'"><p>Problema</p></button></li>
-                    <li><button class="nav-button" onclick="location.href='#problema'"><p>Projeto</p></button></li>
-                    <li><button class="nav-button" onclick="location.href='#problema'"><p>Público Alvo</p></button></li>
+                    <li><button class="nav-button" onclick="location.href='#projeto'"><p>Projeto</p></button></li>
                     <li><button class="nav-button" onclick="location.href='#pontos-fortes'"><p>Pontos Fortes</p></button></li>
+                    <li><button class="nav-button" onclick="location.href='#problema'"><p>Problema</p></button></li>
+                    <li><button class="nav-button" onclick="location.href='#publico-alvo'"><p>Público Alvo</p></button></li>
                     <li><button class="nav-button" onclick="location.href='#pitch'"><p>Pitch</p></button></li>
                     <li><button class="nav-button" onclick="location.href='#desenvolvedores'"><p>Devs</p></button></li>
                     <li><button class="nav-button" onclick="location.href='#footer'"><p>Contato</p></button></li>
@@ -28,22 +27,47 @@
 
     </section>
 
+    <section id="projeto">
+        <div id="projeto-text">
+            <h2 id="projeto-text-titulo">Projeto</h2>
+            <div id="projeto-text-description">
+                <p>Nosso projeto "Hospital dos Quadrinhos" visa ajudar o ambiente de saúde ao introduzir novas</p> 
+                <p>tecnologias e estratégias inovadoras para otimizar a organização de seus setores, respeitando privacidade e</p> 
+                <p>melhorando a eficiência dos processos.</p>
+            </div>
+    </section>
+
     <section id="pontos-fortes">
         <div id="div-imagem-nuvem">
             <img id="imagem-nuvem" src="./img/Lovepik_com-401339280-children-in-the-clouds.png">
         </div>
 
         <div id="container-texto-imagem-nuvem">
-        <h2>Pontos Fortes</h2>
+        <h2 id="pontos-fortes-titulo">Pontos Fortes</h2>
         <div id="texto-imagem-nuvem">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
+            O diferencial da nossa ideia é maneira com que a criança se relaciona com a informação, uma vez apresentada com personagens desenhados e histórias simples, a criança consegue compreender o que irá acontecer e principalmente não se assustar, ou ter qualquer sentimento ruim.
+            Nosso projeto além de tudo, incentiva a leitura e possui pouco custo, uma vez o maior gasto será com comissões de artistas para as histórias.  O sistema pode ser incluído diretamente no site  já existente do HC e no seu sistemas de e-mail.
+            Será possível também manter acessibilidade colocando posteriormente uma ferramenta de leitura para deficientes visuais, por exemplo.
+        </p>
         </div>
+        </div>
+    </section>
+    
+    <section id="problema">
+        <div id="problema-text">
+            <h2>Problema</h2>
+            <div id="problema-text-description">
+                <p>
+
+                </p>
+            </div>
         </div>
     </section>
 
     <section id="pitch">
-        <iframe width="853" height="480" src="https://www.youtube.com/embed/9bZkp7q19f0" title="PSY - GANGNAM STYLE(강남스타일) M/V" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <h2 id="padding-titulo">Pitch</h2>
+        <iframe id="iframe-pitch" width="700" height="395" src="https://www.youtube.com/embed/b3wKX77eU0g" title="CHALLENGE 2023/2024 - ESPS 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
     </section>
 
     <section id="desenvolvedores">
@@ -113,9 +137,12 @@
 
             <div id="direita">
                 <div id="emails">
-                    <p>jimig60445@mainmile.com</p>
-                    <p>jimig60445@mainmile.com</p>
-                    <p>jimig60445@mainmile.com</p>
+                    <p>Av. Dr. Enéas de Carvalho Aguiar, 255</p>
+                    <p>Cerqueira César</p>
+                    <p>05403-000</p>
+                    <p>São Paulo - Brasil</p>
+                    <p>Tel.: (0xx11) 2661-0000</p>
+
                 </div>
 
                 <div id="receber-info-projeto">
@@ -123,7 +150,7 @@
                     <form id="verificar-email">
                         <label for="mail">E-mail:</label>
                         <input type="email" id="mail" />
-                        <button type="submit">Confirmar</button>                    
+                        <button id="botao-comic" type="submit">Confirmar</button>                    
                     </form>
                 </div>
             </div>
@@ -132,22 +159,22 @@
         <div id="linha"></div>
         <div id="redes-sociais-container">
             <div class="logo-rede-social-box">
-                <a href="" class="fonte-branca">
+                <a href="https://twitter.com/hospitalHCFMUSP" class="fonte-branca">
                     <i class="bi bi-twitter"></i>
                 </a>
             </div>
             <div class="logo-rede-social-box" >
-                <a href="" class="fonte-branca">
+                <a href="https://www.facebook.com/hospitaldasclinicasdafmusp/?locale=pt_BR" class="fonte-branca">
                     <i class="bi bi-facebook"></i>
                 </a>
             </div>
             <div class="logo-rede-social-box">
-                <a href="" class="fonte-branca">
+                <a href="https://www.instagram.com/hospitalhcfmusp/" class="fonte-branca">
                     <i class="bi bi-instagram"></i>
                 </a>
             </div>
             <div class="logo-rede-social-box">
-                <a href="" class="fonte-branca">
+                <a href="https://www.linkedin.com/company/hcfmusp/?originalSubdomain=br" class="fonte-branca">
                     <i class="bi bi-linkedin"></i>
                 </a>
             </div>
@@ -156,32 +183,33 @@
     <div id="contato-devs-absolute">
         <div id="contato-desenvolvedor-container">
             <div class="contato-desenvolvedor-box">
-                <div class="imagem-desenvolvedor"></div>
+                <div class="imagem-desenvolvedor" id="caio-freitas-img"></div>
                 <p class="fonte-branca">Caio Freitas</p>
+                <p class="fonte-branca">caio.freitascfc@gmail.com</p>
+                <p class="fonte-branca">(11) 9 8310-3503</p>
+                <a href="https://www.linkedin.com/in/caio-freitas-627972284/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin fonte-branca"></i></a>
+            </div>            
+            <div class="contato-desenvolvedor-box">
+                <div class="imagem-desenvolvedor" id="lana-andrade-img"></div>
+                <p class="fonte-branca">Lana Andrade</p>
+                <p class="fonte-branca">lanaandrade2003@gmail.com</p>
+                <p class="fonte-branca">(11) 9 6875-4044</p>
+                <a href="https://www.linkedin.com/in/lanaoliveiraandrade/"><i class="bi bi-linkedin fonte-branca"></i></a>
+            </div>
+
+            <div class="contato-desenvolvedor-box">
+                <div class="imagem-desenvolvedor"></div>
+                <p class="fonte-branca">Lucas Garcia</p>
                 <p class="fonte-branca">caiofreitas@gmail.com</p>
                 <p class="fonte-branca">1140028922</p>
                 <a href=""><i class="bi bi-linkedin fonte-branca"></i></a>
             </div>
             <div class="contato-desenvolvedor-box">
-                <div class="imagem-desenvolvedor"></div>
-                <p class="fonte-branca">Caio Freitas</p>
-                <p class="fonte-branca">caiofreitas@gmail.com</p>
-                <p class="fonte-branca">1140028922</p>
-                <a href=""><i class="bi bi-linkedin fonte-branca"></i></a>
-            </div>
-            <div class="contato-desenvolvedor-box">
-                <div class="imagem-desenvolvedor"></div>
-                <p class="fonte-branca">Caio Freitas</p>
-                <p class="fonte-branca">caiofreitas@gmail.com</p>
-                <p class="fonte-branca">1140028922</p>
-                <a href=""><i class="bi bi-linkedin fonte-branca"></i></a>
-            </div>
-            <div class="contato-desenvolvedor-box">
-                <div class="imagem-desenvolvedor"></div>
-                <p class="fonte-branca">Caio Freitas</p>
-                <p class="fonte-branca">caiofreitas@gmail.com</p>
-                <p class="fonte-branca">1140028922</p>
-                <a href=""><i class="bi bi-linkedin fonte-branca"></i></a>
+                <div class="imagem-desenvolvedor" id="mateus-tibao-img"></div>
+                <p class="fonte-branca">Mateus Tibão</p>
+                <p class="fonte-branca">mateus.tibao@gmail.com</p>
+                <p class="fonte-branca">(11) 9 9841-5322</p>
+                <a href="https://www.linkedin.com/in/mateustibao/"><i class="bi bi-linkedin fonte-branca"></i></a>
             </div>
         </div>
 

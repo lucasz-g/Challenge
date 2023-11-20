@@ -1,3 +1,46 @@
+@font-face {
+    font-family: "COMIC-ZINE";
+    src:
+      local("COMIC-ZINE"),
+      url("./fonts/COMIC-ZINE/comic_zine_ot.otf") format("opentype") tech(color-COLRv1),
+      url("./fonts/COMIC-ZINE/comic_zine_ot.otf") format("opentype");
+      font-weight: normal;
+      font-style: normal;  
+}
+@font-face {
+    font-family: "Scratch";
+    src:
+      local("Scratch"),
+      url("./fonts/Scratch/Scratch_.ttf") format("opentype") tech(color-COLRv1),
+      url("./fonts/Scratch/Scratch_.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Comicblast";
+    src:
+      local("Comicblast"),
+      url("./fonts/comicblast/Comicblast-Regular.otf") format("opentype") tech(color-COLRv1),
+      url("./fonts/comicblast/Comicblast-Regular.otf") format("opentype");
+      font-weight: normal;
+      font-style: normal;  
+}
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+h2{
+    font-family: 'COMIC-ZINE';
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+h3{
+    font-family: 'Scratch';
+    font-size: 1.5rem;
+}
+
+p{
+    font-family: 'Comic Neue', cursive;
+}
+
 *{
     margin: 0 auto;
 }
@@ -10,18 +53,15 @@ section#nav {
     display: flex;
     flex-direction: column;
     background-color: #6adeed;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-nav#nav-bar-img{
+nav#nav-bar{
     display: flex;
-    padding: 1rem 0rem 1rem 1rem;
+    padding: 1rem 0rem 1rem 0rem;
     width: 100%;
-}
+    justify-content: center
 
-img#logo-img {
-    width: 300px;
-    height: 200px;
 }
 
 ul#nav-list{
@@ -50,6 +90,32 @@ button.nav-button:hover{
     cursor: pointer;
 }
 
+/* 
+Section Projeto 
+*/
+
+section#projeto {
+    padding: 2rem 0rem 1rem 0rem;
+    display: flex;
+    background-color: #6adeed;
+}
+
+div#projeto-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 
+Section Problema
+ */
+
+section#problema {
+    padding: 2rem 1rem 2rem 1rem; 
+    background-color: #e8fef1;
+    display: flex;
+}
+
 
 /*
 Section Pontos fortes
@@ -73,15 +139,21 @@ Section Pontos fortes
 #container-texto-imagem-nuvem{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     width: 100%;
     height: 100%;
     justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    font-family: 'Comic Neue', cursive;
+    font-size: 1rem;
+    font-weight: 50;
 }
 #texto-imagem-nuvem{
-    height:10rem;
+    height:16rem;
     width: 30rem;
 }
+
 
 /*
 Pitch
@@ -102,8 +174,15 @@ Pitch
     width: 100%;
     display: flex;
     flex-direction: column;
+    font-size: 0.9rem;
 }
 
+#iframe-pitch{
+    border: 6px solid black;
+}
+#padding-titulo{
+    padding-bottom: 2rem;
+}
 /*
 Desenvolvedores
 */
@@ -116,7 +195,13 @@ Desenvolvedores
     align-items: center;
     justify-content: center;
     gap: 6rem;
-    background-color: lightgray;
+    background-image: url("./img/quadrinho-fundo\ \(2\).jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 #desenvolvedores-box{
     display: flex;
@@ -142,15 +227,13 @@ Desenvolvedores
 }
 
 #caio-freitas{
-
+    background-image: url("./img/caio-img.jpeg");
 }
 #mateus-tibao{
-
+    background-image: url("./img/mateus-tibao.jpeg");
 }
 #lana-andrade{
-    /*
     background-image: url("./img/img-lana-andrade.jpeg");
-    */
 }
 #lucas-garcia{
 
@@ -161,7 +244,7 @@ Footer
 */
 
 #footer{
-    color: white;
+    color: orange;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -191,13 +274,15 @@ Footer
 }
 
 #contato-grande, #contato-mini, #link-info-desenvolvedores{
-    color: white;
+    color: orange;
     text-decoration: none;
     text-align: left;
 }
 
+#contato-grande{
+    font-size: 2rem;
+}
 #btn-contato-devs{
-    padding: 1rem;
     border: none;
     background: none;
     border-radius: 0.5rem;
@@ -208,7 +293,7 @@ Footer
 }
 #linha{
     border:solid;
-    border-color: white;
+    border-color: orange;
     width: 80rem;
     align-self: center;
     border-radius: 15rem;
@@ -219,8 +304,28 @@ Footer
 }
 
 #p-info-projeto{
+    padding-bottom: 1rem;
 }
 
+#verificar-email{
+    font-family: 'Comic Neue', cursive;
+}
+
+#botao-comic{
+    font-family: 'Comic Neue', cursive;
+    color: white;
+    background-color: orangered;
+    border: none;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+#mail{
+    padding: none;
+    font-size: 1rem;
+    height: 1.2rem;
+}
 #redes-sociais-container{
     height: 5rem;
     width: 20%;
@@ -230,7 +335,7 @@ Footer
 
 .logo-rede-social-box{
     border:solid;
-    border-color: white;
+    border-color: orange;
     width: 4rem;
     height: 4rem;
     justify-content: center;
@@ -242,7 +347,7 @@ Footer
 }
 
 .fonte-branca{
-    color: white;
+    color: orange;
 }
 
 #contato-devs-absolute{
@@ -252,7 +357,7 @@ Footer
     top: 126rem;
     position: absolute;
     right: 0rem;
-    border-left: 1px solid white;
+    border-left: 1px solid orange;
     border-width: 0.01rem;
     display: flex;
     justify-content: center;
@@ -272,12 +377,26 @@ Footer
     flex-direction: row;
     align-items: center;
     gap: 1rem;
+    justify-content: flex-start;
+    width: 80%;
 }
 
 #contato-desenvolvedor-container{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     gap: 1rem;
     margin-left: 2rem;
+}
+
+#caio-freitas-img{
+    background-image: url("./img/caio-img.jpeg");
+}
+
+#lana-andrade-img{
+    background-image: url("./img/lana-img.jpeg");
+}
+
+#mateus-tibao-img{
+    background-image: url("./img/mateus.jpeg");
 }

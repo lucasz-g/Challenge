@@ -88,7 +88,7 @@ button.nav-button {
 }
 
 button.nav-button:hover{
-    background-color: #e8fef1; 
+    background-color: #387a82; 
     transition: 0.5s;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 10px;
     cursor: pointer;

@@ -136,7 +136,7 @@ section#problema {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    background-color: #e8fef1;
+    background-color: #d1fbfa;
     padding: 2rem 0rem 2rem 0rem; 
 }
 
@@ -145,12 +145,13 @@ div#problema-text {
     align-items: center;
     flex-direction: column;
 
-    color: #385a42;
+    color: #0c3837;
     padding: 1rem;
 }
 
 img.section-img {
-    width: 350px;
+    width: 400px;
+    padding: 3rem;
 }
 
 

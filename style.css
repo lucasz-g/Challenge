@@ -349,11 +349,13 @@ Footer
     border: none;
     background: none;
     border-radius: 0.5rem;
+    margin-left: 4rem;
 }
 
 #btn-contato-devs:hover{
     cursor:pointer;
 }
+
 #linha{
     border:solid;
     border-color: orange;
@@ -394,6 +396,7 @@ Footer
     width: 20%;
     display: flex;
     justify-content: center;
+    align-self: center;
 }
 
 .logo-rede-social-box{
@@ -417,7 +420,7 @@ Footer
     background-color: black;
     width: 55rem;
     height: 18rem;
-    top: 126rem;
+    top: 203rem;
     position: absolute;
     right: 0rem;
     border-left: 1px solid orange;
@@ -441,7 +444,7 @@ Footer
     align-items: center;
     gap: 1rem;
     justify-content: flex-start;
-    width: 80%;
+    width: 100%;
 }
 
 #contato-desenvolvedor-container{
@@ -462,4 +465,7 @@ Footer
 
 #mateus-tibao-img{
     background-image: url("./img/mateus.jpeg");
+}
+#lucas-garcia-img{
+    background-image: url("./img/img-Lucas-Garcia.jpeg");
 }

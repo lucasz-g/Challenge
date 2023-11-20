@@ -121,6 +121,13 @@ Pitch
     align-items: center;
     justify-content: center;
     background-color: white;
+    background-image: url("./img/fundo-pitch.png");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 #footer{
     background-color: black;
@@ -131,6 +138,9 @@ Pitch
     font-size: 0.9rem;
 }
 
+#iframe-pitch{
+    border: 6px solid black;
+}
 #padding-titulo{
     padding-bottom: 2rem;
 }
@@ -146,7 +156,13 @@ Desenvolvedores
     align-items: center;
     justify-content: center;
     gap: 6rem;
-    background-color: lightgray;
+    background-image: url("./img/quadrinho-fundo\ \(2\).jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 #desenvolvedores-box{
     display: flex;
@@ -189,7 +205,7 @@ Footer
 */
 
 #footer{
-    color: white;
+    color: orange;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -219,7 +235,7 @@ Footer
 }
 
 #contato-grande, #contato-mini, #link-info-desenvolvedores{
-    color: white;
+    color: orange;
     text-decoration: none;
     text-align: left;
 }
@@ -238,7 +254,7 @@ Footer
 }
 #linha{
     border:solid;
-    border-color: white;
+    border-color: orange;
     width: 80rem;
     align-self: center;
     border-radius: 15rem;
@@ -256,10 +272,21 @@ Footer
     font-family: 'Comic Neue', cursive;
 }
 
-#fonte-comic{
+#botao-comic{
     font-family: 'Comic Neue', cursive;
+    color: white;
+    background-color: orangered;
+    border: none;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
 }
-
+#mail{
+    padding: none;
+    font-size: 1rem;
+    height: 1.2rem;
+}
 #redes-sociais-container{
     height: 5rem;
     width: 20%;
@@ -269,7 +296,7 @@ Footer
 
 .logo-rede-social-box{
     border:solid;
-    border-color: white;
+    border-color: orange;
     width: 4rem;
     height: 4rem;
     justify-content: center;
@@ -281,7 +308,7 @@ Footer
 }
 
 .fonte-branca{
-    color: white;
+    color: orange;
 }
 
 #contato-devs-absolute{
@@ -291,7 +318,7 @@ Footer
     top: 126rem;
     position: absolute;
     right: 0rem;
-    border-left: 1px solid white;
+    border-left: 1px solid orange;
     border-width: 0.01rem;
     display: flex;
     justify-content: center;

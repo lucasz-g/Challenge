@@ -167,6 +167,11 @@ Pitch
     align-items: center;
     justify-content: center;
     background-color: #e8fef1;
+    background-image: url("./img/fundo-pitch.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 #footer{
     background-color: black;

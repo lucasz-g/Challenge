@@ -7,4 +7,12 @@ function toggleContatoDevs() {
     }
   }
   
+  function validarEmail() {
+    const emailInput = document.getElementById('mail');
   
+    const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+    if (emailInput.value === null || !regexEmail.test(emailInput.value)) {
+      alert("E-mail inválido")    
+    } 
+  }

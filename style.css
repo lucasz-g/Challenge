@@ -1,3 +1,46 @@
+@font-face {
+    font-family: "COMIC-ZINE";
+    src:
+      local("COMIC-ZINE"),
+      url("./fonts/COMIC-ZINE/comic_zine_ot.otf") format("opentype") tech(color-COLRv1),
+      url("./fonts/COMIC-ZINE/comic_zine_ot.otf") format("opentype");
+      font-weight: normal;
+      font-style: normal;  
+}
+@font-face {
+    font-family: "Scratch";
+    src:
+      local("Scratch"),
+      url("./fonts/Scratch/Scratch_.ttf") format("opentype") tech(color-COLRv1),
+      url("./fonts/Scratch/Scratch_.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Comicblast";
+    src:
+      local("Comicblast"),
+      url("./fonts/comicblast/Comicblast-Regular.otf") format("opentype") tech(color-COLRv1),
+      url("./fonts/comicblast/Comicblast-Regular.otf") format("opentype");
+      font-weight: normal;
+      font-style: normal;  
+}
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+h2{
+    font-family: 'COMIC-ZINE';
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+h3{
+    font-family: 'Scratch';
+    font-size: 1.5rem;
+}
+
+p{
+    font-family: 'Comic Neue', cursive;
+}
+
 *{
     margin: 0 auto;
 }
@@ -50,15 +93,21 @@ Section Pontos fortes
 #container-texto-imagem-nuvem{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     width: 100%;
     height: 100%;
     justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    font-family: 'Comic Neue', cursive;
+    font-size: 1rem;
+    font-weight: 50;
 }
 #texto-imagem-nuvem{
-    height:10rem;
+    height:16rem;
     width: 30rem;
 }
+
 
 /*
 Pitch
@@ -79,8 +128,12 @@ Pitch
     width: 100%;
     display: flex;
     flex-direction: column;
+    font-size: 0.9rem;
 }
 
+#padding-titulo{
+    padding-bottom: 2rem;
+}
 /*
 Desenvolvedores
 */
@@ -119,15 +172,13 @@ Desenvolvedores
 }
 
 #caio-freitas{
-
+    background-image: url("./img/caio-img.jpeg");
 }
 #mateus-tibao{
-
+    background-image: url("./img/mateus-tibao.jpeg");
 }
 #lana-andrade{
-    /*
     background-image: url("./img/img-lana-andrade.jpeg");
-    */
 }
 #lucas-garcia{
 
@@ -173,8 +224,10 @@ Footer
     text-align: left;
 }
 
+#contato-grande{
+    font-size: 2rem;
+}
 #btn-contato-devs{
-    padding: 1rem;
     border: none;
     background: none;
     border-radius: 0.5rem;
@@ -196,6 +249,15 @@ Footer
 }
 
 #p-info-projeto{
+    padding-bottom: 1rem;
+}
+
+#verificar-email{
+    font-family: 'Comic Neue', cursive;
+}
+
+#fonte-comic{
+    font-family: 'Comic Neue', cursive;
 }
 
 #redes-sociais-container{
@@ -249,12 +311,26 @@ Footer
     flex-direction: row;
     align-items: center;
     gap: 1rem;
+    justify-content: flex-start;
+    width: 80%;
 }
 
 #contato-desenvolvedor-container{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     gap: 1rem;
     margin-left: 2rem;
+}
+
+#caio-freitas-img{
+    background-image: url("./img/caio-img.jpeg");
+}
+
+#lana-andrade-img{
+    background-image: url("./img/lana-img.jpeg");
+}
+
+#mateus-tibao-img{
+    background-image: url("./img/mateus.jpeg");
 }

@@ -9,22 +9,45 @@ html {
 section#nav {
     display: flex;
     flex-direction: column;
+    background-color: #6adeed;
+    justify-content: space-between;
 }
 
 nav#nav-bar-img{
     display: flex;
-    padding: 0.5rem 1rem 1rem 1rem;
-
-    justify-content: space-between;
-    align-items: center;
-    background-color: gray;
+    padding: 1rem 0rem 1rem 1rem;
     width: 100%;
+}
+
+img#logo-img {
+    width: 300px;
+    height: 200px;
 }
 
 ul#nav-list{
     display: flex;
     gap: 1rem;
     list-style: none;
+}
+
+button.nav-button {
+    display: flex;
+
+    background-color:#12adbf; 
+    color: white; 
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 15px;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 10px;
+    width: 8rem;
+}
+
+button.nav-button:hover{
+    background-color: #8f7eac; 
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 10px;
+    cursor: pointer;
 }
 
 
@@ -71,7 +94,7 @@ Pitch
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: #e8fef1;
 }
 #footer{
     background-color: black;
